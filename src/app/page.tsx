@@ -1,11 +1,10 @@
-import prisma from "@/lib/prisma/client"
+import { requireAuth } from "@/lib/auth-utils";
 
 const HomePage = async () => {
-  const users = await prisma.user.findMany();
+  await requireAuth();
+
   return (
-    <div className="min-h-screen min-w-screen flex items-center justify-center">
-      {JSON.stringify(users)}
-    </div>
+    <div className="min-h-screen min-w-screen flex items-center justify-center"></div>
   );
-}
-export default HomePage
+};
+export default HomePage;
