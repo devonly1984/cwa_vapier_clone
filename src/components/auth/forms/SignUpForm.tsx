@@ -1,18 +1,12 @@
 "use client";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import Image from "next/image";
+
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Form,
   FormControl,
@@ -25,6 +19,8 @@ import { Input } from "@/components/ui/input";
 import { signUpSchema, SignUpSchema } from "@/lib/schemas/signupSchema";
 import { authClient } from "@/lib/auth-client";
 import { toast } from "sonner";
+import SocialButton from "../shared/SocialButton";
+import FormHeader from "../layout/FormHeader";
 
 const SignUpForm = () => {
   const router = useRouter();
@@ -62,32 +58,12 @@ const SignUpForm = () => {
   return (
     <div className="flex flex-col gap-6">
       <Card>
-        <CardHeader className="text-center">
-          <CardTitle>Get Started</CardTitle>
-          <CardDescription>Create an account get started</CardDescription>
-        </CardHeader>
+        <FormHeader type="signup" />
         <CardContent>
           <Form {...signupForm}>
             <form onSubmit={signupForm.handleSubmit(onSubmit)}>
               <div className="grid gap-6">
-                <div className="flex flex-col gap-4">
-                  <Button
-                    variant={"outline"}
-                    type="button"
-                    className="w-full"
-                    disabled={isPending}
-                  >
-                    Continue with Github
-                  </Button>
-                  <Button
-                    variant={"outline"}
-                    type="button"
-                    className="w-full"
-                    disabled={isPending}
-                  >
-                    Continue with Google
-                  </Button>
-                </div>
+                <SocialButton isPending={isPending} />
                 <div className="grid gap-6">
                   <FormField
                     control={signupForm.control}
