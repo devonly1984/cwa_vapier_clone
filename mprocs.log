@@ -1,0 +1,12 @@
+ERROR [mprocs::error] Error: channel closed
+ERROR [mprocs::error] Error: channel closed
+ERROR [portable_pty::win::psuedocon] CreateProcessW `"npx \" inngest-cli@latest\" \" dev\"\0"` in cwd `Some("C:\\Users\\pcguard\\Downloads\\Coding\\javascript\\nextjs\\codewantonio\\cwa_vapier_clone\0")` failed: The system cannot find the file specified. (os error 2)
+ERROR [portable_pty::win::psuedocon] CreateProcessW `"npm run dev\0"` in cwd `Some("C:\\Users\\pcguard\\Downloads\\Coding\\javascript\\nextjs\\codewantonio\\cwa_vapier_clone\0")` failed: The system cannot find the file specified. (os error 2)
+ERROR [mprocs::error] Error: channel closed
+ERROR [mprocs::error] Error: channel closed
+ERROR [portable_pty::win::psuedocon] CreateProcessW `"\"npx inngest-cli@latest dev\"\0"` in cwd `Some("C:\\Users\\pcguard\\Downloads\\Coding\\javascript\\nextjs\\codewantonio\\cwa_vapier_clone\0")` failed: The system cannot find the file specified. (os error 2)
+ERROR [portable_pty::win::psuedocon] CreateProcessW `"\"npm run dev\"\0"` in cwd `Some("C:\\Users\\pcguard\\Downloads\\Coding\\javascript\\nextjs\\codewantonio\\cwa_vapier_clone\0")` failed: The system cannot find the file specified. (os error 2)
+ERROR [mprocs::error] Error: channel closed
+ERROR [mprocs::error] Error: channel closed
+ERROR [mprocs::error] Error: channel closed
+ERROR [mprocs::error] Error: channel closed
